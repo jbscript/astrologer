@@ -1,0 +1,266 @@
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  Facebook,
+  Instagram,
+  Twitter,
+  Youtube,
+} from "lucide-react";
+
+export default function Footer() {
+  return (
+    <footer className="bg-slate-800 text-white">
+      {/* Main Footer */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+          {/* Company Info */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center mb-6">
+              <div className="relative">
+                {/* Sun Logo */}
+                <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center relative">
+                  <span className="text-white font-bold text-lg">{"☀"}</span>
+                  {/* Sun rays */}
+                  <div className="absolute inset-0">
+                    {[...Array(8)].map((_, i) => (
+                      <div
+                        key={i}
+                        className="absolute w-1 h-3 bg-orange-500"
+                        style={{
+                          top: "-4px",
+                          left: "50%",
+                          transformOrigin: "50% 28px",
+                          transform: `translateX(-50%) rotate(${i * 45}deg)`,
+                        }}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <span className="ml-3 text-xl font-bold text-orange-500">
+                AstrologerPoduval
+              </span>
+            </div>
+            <p className="text-gray-300 mb-6 leading-relaxed">
+              Experience authentic Vedic astrology with Dr. Shri Chittarabhanu K
+              Poduval, one of the world's most intuitive astrologers, based in
+              Payyanur - the world hub of astrology.
+            </p>
+            <div className="flex space-x-4">
+              <a
+                href="#"
+                className="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
+              >
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
+              >
+                <Youtube className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6 text-orange-500">
+              Quick Links
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="/"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  About Dr. Poduval
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/blog"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  Astrology Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/appointment"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  Book Appointment
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/contact"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6 text-orange-500">
+              Popular Services
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="/services"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  Personal Horoscope Reading
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  Marriage Compatibility
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  Ashamanjaka Temple Prashna
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  Find Your Kuladeivatha
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  Online Counseling
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="text-gray-300 hover:text-orange-500 transition-colors"
+                >
+                  Handwritten Yantras
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6 text-orange-500">
+              Contact Information
+            </h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-orange-500 mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-gray-300">Call Us</p>
+                  <p className="text-white font-medium">+1800 326 3264</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-orange-500 mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-gray-300">Email Us</p>
+                  <p className="text-white font-medium">support@website.com</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-orange-500 mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-gray-300">Location</p>
+                  <p className="text-white font-medium">Payyanur, Kerala</p>
+                  <p className="text-gray-300 text-sm">
+                    World Hub of Astrology
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Clock className="w-5 h-5 text-orange-500 mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-gray-300">Consultation Hours</p>
+                  <p className="text-white font-medium">9:00 AM - 6:00 PM</p>
+                  <p className="text-gray-300 text-sm">Monday to Saturday</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="border-t border-slate-700">
+        <div className="container mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="text-gray-300 text-sm text-center md:text-left">
+              <p>
+                © 2024 Dr. Shri Chittarabhanu K Poduval. All rights reserved. |{" "}
+                <a
+                  href="/privacy"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  Privacy Policy
+                </a>{" "}
+                |{" "}
+                <a
+                  href="/terms"
+                  className="hover:text-orange-500 transition-colors"
+                >
+                  Terms of Service
+                </a>
+              </p>
+            </div>
+            <div className="text-gray-300 text-sm">
+              <p>Designed with ❤️ for spiritual guidance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

@@ -1,4 +1,6 @@
 import About from "./components/about";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Services from "./components/services";
@@ -21,6 +23,8 @@ export default function Page() {
       </main>
       <About />
       <Services />
+      <Contact />
+      <Footer />
     </div>
   );
 }

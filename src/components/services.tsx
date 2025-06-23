@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -145,10 +147,10 @@ export default function Services() {
             return (
               <Card
                 key={index}
-                className="group hover:shadow-xl transition-all duration-300 cursor-pointer border-orange-100 hover:border-orange-300 hover:-translate-y-2"
+                className="group hover:shadow-xl transition-all duration-300 cursor-pointer border-orange-100 hover:border-orange-300 hover:-translate-y-2 relative overflow-hidden py-0"
                 onClick={() => handleWhatsAppClick(service.whatsappMessage)}
               >
-                <CardContent className="p-6 text-center h-full flex flex-col">
+                <CardContent className="p-6 text-center h-full flex flex-col relative">
                   {/* Icon */}
                   <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <IconComponent className="w-8 h-8 text-white" />
@@ -163,6 +165,19 @@ export default function Services() {
                   <p className="text-gray-600 mb-6 flex-grow leading-relaxed">
                     {service.description}
                   </p>
+
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-green-500/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-center text-white">
+                      <MessageCircle className="w-12 h-12 mx-auto mb-3" />
+                      <h4 className="text-xl font-bold mb-2">
+                        Connect via WhatsApp
+                      </h4>
+                      <p className="text-green-100">
+                        Click to start consultation
+                      </p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             );
