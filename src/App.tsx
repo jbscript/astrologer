@@ -9,8 +9,10 @@ export default function Page() {
   return (
     <div className="min-h-screen">
       <Header />
-      <Hero />
-      <main className="bg-slate-50 py-16">
+      <div className="m-auto mx-auto max-w-7xl px-4">
+        <Hero />
+        <About />
+        {/* <main className="bg-slate-50 py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Welcome to Dr. Poduval's Astrology Services
@@ -20,10 +22,10 @@ export default function Page() {
             guidance for your life's most important decisions.
           </p>
         </div>
-      </main>
-      <About />
-      <Services />
-      <Contact />
+      </main> */}
+        <Services />
+        <Contact />
+      </div>
       <Footer />
     </div>
   );

@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { Star, Calendar, Phone, Award } from "lucide-react";
+import { Calendar, Phone, Award } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="bg-white text-gray-900 overflow-hidden relative p-6">
+    <section className="bg-white text-gray-900 overflow-hidden relative">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-32 h-32 border border-orange-500/30 rounded-full"></div>
