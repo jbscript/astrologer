@@ -13,7 +13,7 @@ export default function About() {
   return (
     <div className="bg-white">
       {/* Main Content */}
-      <section className="py-16 md:py-24">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
             {/* Left Content */}
