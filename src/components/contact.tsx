@@ -55,7 +55,7 @@ export default function Contact() {
                 </h3>
                 <p className="text-gray-600 mb-2">Send us your queries</p>
                 <p className="text-orange-500 font-medium">
-                  support@website.com
+                  support@astrologerpoduval.com
                 </p>
               </CardContent>
             </Card>

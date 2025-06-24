@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <div className="min-h-screen">
       <Header />
-      <div className="m-auto mx-auto max-w-7xl px-4">
+      <main className="mx-auto max-w-6xl w-full px-4">
         <Hero />
         <About />
         {/* <main className="bg-slate-50 py-16">
@@ -25,7 +25,7 @@ export default function Page() {
       </main> */}
         <Services />
         <Contact />
-      </div>
+      </main>
       <Footer />
     </div>
   );

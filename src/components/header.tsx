@@ -1,4 +1,4 @@
-import { Phone, Mail, Search, Menu, X } from "lucide-react";
+import { Phone, Mail, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -8,9 +8,9 @@ export default function Header() {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <header className="bg-slate-800 text-white">
+    <header className="bg-slate-800 text-white ">
       {/* Top Contact Bar – hidden on mobile */}
-      <div className="bg-slate-900 py-2 px-4 hidden md:block">
+      <div className="bg-slate-900 py-2 px-8 hidden md:block">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center gap-2">
             <Phone className="w-4 h-4 text-orange-500" />
@@ -20,41 +20,18 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <Mail className="w-4 h-4 text-orange-500" />
             <span className="text-orange-500">Talk to our Astrogers</span>
-            <span>- support@website.com</span>
+            <span>- support@astrologerpoduval.com</span>
           </div>
         </div>
       </div>
 
       {/* Main Header */}
-      <div className="py-4 px-4">
+      <div className="py-4 px-8  lg:mx-auto flex">
         <div className="container mx-auto flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="relative">
-              {/* Sun Logo */}
-              <div className="w-10 h-10 md:w-12 md:h-12 bg-orange-500 rounded-full flex items-center justify-center relative">
-                <span className="text-white font-bold text-base md:text-lg">
-                  {"☀"}
-                </span>
-                {/* Sun rays */}
-                <div className="absolute inset-0">
-                  {[...Array(8)].map((_, i) => (
-                    <div
-                      key={i}
-                      className="absolute w-1 h-2 md:h-3 bg-orange-500"
-                      style={{
-                        top: "-4px",
-                        left: "50%",
-                        transformOrigin: "50% 24px",
-                        transform: `translateX(-50%) rotate(${i * 45}deg)`,
-                      }}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-            <span className="ml-2 md:ml-3 text-xl md:text-2xl font-bold text-orange-500">
-              AstrologerPoduval
+            <span className="text-xl md:text-2xl font-bold text-orange-500">
+              Astrologer Poduval
             </span>
           </div>
 
@@ -73,45 +50,37 @@ export default function Header() {
             )}
           </Button>
         </div>
+        {/* Desktop Navigation */}
+        <nav className="py-3 hidden lg:block ">
+          <div className="container flex items-center justify-between mx-auto">
+            <ul className="flex items-center space-x-8">
+              {[
+                ["/", "Home"],
+                ["/about", "About"],
+                ["/services", "Services", true],
+                ["/blog", "Blog"],
+                ["/appointment", "Appointment"],
+                ["/shop", "Shop"],
+                ["/pages", "Pages"],
+                ["/contact", "Contact"],
+              ].map(([href, label, active]) => (
+                <li key={href as string}>
+                  <a
+                    href={href as string}
+                    className={`transition-colors ${
+                      active
+                        ? "text-orange-500 font-medium"
+                        : "hover:text-orange-500"
+                    }`}
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
       </div>
-
-      {/* Desktop Navigation */}
-      <nav className="bg-slate-700 py-3 px-4 hidden lg:block">
-        <div className="container mx-auto flex items-center justify-between">
-          <ul className="flex items-center space-x-8">
-            {[
-              ["/", "Home"],
-              ["/about", "About"],
-              ["/services", "Services", true],
-              ["/blog", "Blog"],
-              ["/appointment", "Appointment"],
-              ["/shop", "Shop"],
-              ["/pages", "Pages"],
-              ["/contact", "Contact"],
-            ].map(([href, label, active]) => (
-              <li key={href as string}>
-                <a
-                  href={href as string}
-                  className={`transition-colors ${
-                    active
-                      ? "text-orange-500 font-medium"
-                      : "hover:text-orange-500"
-                  }`}
-                >
-                  {label}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-white hover:text-orange-500"
-          >
-            <Search className="w-5 h-5" />
-          </Button>
-        </div>
-      </nav>
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
@@ -154,20 +123,8 @@ export default function Header() {
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-orange-500" />
                 <span className="text-orange-500">Email:</span>
-                <span>support@website.com</span>
+                <span>support@astrologerpoduval.com</span>
               </div>
-            </div>
-
-            {/* Search */}
-            <div className="mt-4 pt-4 border-t border-slate-600">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="w-full justify-start text-white hover:text-orange-500"
-              >
-                <Search className="w-5 h-5 mr-2" />
-                Search
-              </Button>
             </div>
           </div>
         </div>
