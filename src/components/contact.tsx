@@ -13,7 +13,7 @@ export default function Contact() {
               {/* Google Map */}
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15552.742857142857!2d75.19444444444444!3d12.097777777777777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4a7e1b1b1b1b1%3A0x1b1b1b1b1b1b1b1b!2sPayyanur%2C%20Kerala!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                  src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=ASTROLOGER Dr.h.c Shri. Chithrabhanu K Poduval, Chithrayogam, Surya Junction, near Bypass, Payyanur, Kerala 670307&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                   width="100%"
                   height="400"
                   style={{ border: 0 }}
