@@ -63,15 +63,21 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="https://wa.me/9526570250?text=Hi%20there%20!&">
-                <Button
-                  size="lg"
-                  className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg"
-                >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Book Consultation
-                </Button>
-              </a>
+              <Button
+                onClick={() => {
+                  const message =
+                    "Hi Dr. Poduval, I would like to book an appoinment.";
+                  const phoneNumber = "9526570250"; // Replace with actual WhatsApp number
+                  const encodedMessage = encodeURIComponent(message);
+                  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+                  window.open(whatsappUrl, "_blank");
+                }}
+                size="lg"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg"
+              >
+                <Calendar className="w-5 h-5 mr-2" />
+                Book Consultation
+              </Button>
 
               <a href="tel:+919526570250">
                 <Button
