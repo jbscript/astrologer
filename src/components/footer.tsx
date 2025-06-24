@@ -18,29 +18,8 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
-              <div className="relative">
-                {/* Sun Logo */}
-                <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center relative">
-                  <span className="text-white font-bold text-lg">{"☀"}</span>
-                  {/* Sun rays */}
-                  <div className="absolute inset-0">
-                    {[...Array(8)].map((_, i) => (
-                      <div
-                        key={i}
-                        className="absolute w-1 h-3 bg-orange-500"
-                        style={{
-                          top: "-4px",
-                          left: "50%",
-                          transformOrigin: "50% 28px",
-                          transform: `translateX(-50%) rotate(${i * 45}deg)`,
-                        }}
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <span className="ml-3 text-xl font-bold text-orange-500">
-                AstrologerPoduval
+              <span className="text-xl font-bold text-orange-500">
+                Astrologer Poduval
               </span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
