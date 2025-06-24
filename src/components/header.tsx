@@ -118,7 +118,7 @@ export default function Header() {
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-orange-500" />
                 <span className="text-orange-500">Call:</span>
-                <span>+1800&nbsp;326&nbsp;3264</span>
+                <a href="tel:+919526570250">+91-9526570250</a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-orange-500" />

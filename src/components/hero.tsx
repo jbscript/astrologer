@@ -63,21 +63,26 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button
-                size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg"
-              >
-                <Calendar className="w-5 h-5 mr-2" />
-                Book Consultation
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-3 text-lg"
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                Call Now
-              </Button>
+              <a href="https://wa.me/9526570250?text=Hi%20there%20!&">
+                <Button
+                  size="lg"
+                  className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg"
+                >
+                  <Calendar className="w-5 h-5 mr-2" />
+                  Book Consultation
+                </Button>
+              </a>
+
+              <a href="tel:+919526570250">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-3 text-lg cursor-pointer"
+                >
+                  <Phone className="w-5 h-5 mr-2" />
+                  Call Now +91-9526570250
+                </Button>
+              </a>
             </div>
           </div>
 
