@@ -183,36 +183,6 @@ export default function Services() {
             );
           })}
         </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-16 bg-gradient-to-r from-orange-50 to-white rounded-2xl p-8 md:p-12">
-          {/* Call to Action */}
-          <div className="text-center mt-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Experience the Wisdom of a True Master
-            </h2>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Dr. Poduval consults extensively and travels all over the country
-              and overseas. Connect with him for authentic astrological
-              guidance.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3"
-              >
-                Book Consultation
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-3"
-              >
-                Learn More
-              </Button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
