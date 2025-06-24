@@ -220,7 +220,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-300 text-sm text-center md:text-left">
               <p>
-                © 2024 Dr. Shri Chittarabhanu K Poduval. All rights reserved. |{" "}
+                © 2025 Dr. Shri Chittarabhanu K Poduval. All rights reserved. |{" "}
                 <a
                   href="/privacy"
                   className="hover:text-orange-500 transition-colors"
