@@ -13,7 +13,7 @@ export default function About() {
   return (
     <div className="bg-white">
       {/* Main Content */}
-      <section className="py-16">
+      <section className="py-16" id="about">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
             {/* Left Content */}
@@ -105,7 +105,10 @@ export default function About() {
           </div>
 
           {/* Expertise Section */}
-          <div className="bg-gradient-to-r from-orange-50 to-white rounded-2xl p-8 md:p-12">
+          <section
+            className="bg-gradient-to-r from-orange-50 to-white rounded-2xl p-8 md:p-12"
+            id="expertise"
+          >
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Areas of <span className="text-orange-500">Expertise</span>
@@ -157,7 +160,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </section>
     </div>

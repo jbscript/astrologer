@@ -7,6 +7,29 @@ export default function Header() {
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
+  const navLinks = [
+    ["#home", "Home"],
+    ["#about", "About"],
+    ["#services", "Services"],
+    ["#expertise", "Expertise"],
+    ["#contact", "Contact"],
+  ];
+
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const id = href.slice(1);
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        setIsMobileMenuOpen(false);
+      }
+    }
+  };
+
   return (
     <header className="bg-slate-800 text-white ">
       {/* Top Contact Bar – hidden on mobile */}
@@ -54,16 +77,7 @@ export default function Header() {
         <nav className="py-3 hidden lg:block ">
           <div className="container flex items-center justify-between mx-auto">
             <ul className="flex items-center space-x-8">
-              {[
-                ["/", "Home"],
-                ["/about", "About"],
-                ["/services", "Services", true],
-                ["/blog", "Blog"],
-                ["/appointment", "Appointment"],
-                ["/shop", "Shop"],
-                ["/pages", "Pages"],
-                ["/contact", "Contact"],
-              ].map(([href, label, active]) => (
+              {navLinks.map(([href, label, active]) => (
                 <li key={href as string}>
                   <a
                     href={href as string}
@@ -72,6 +86,7 @@ export default function Header() {
                         ? "text-orange-500 font-medium"
                         : "hover:text-orange-500"
                     }`}
+                    onClick={(e) => handleNavClick(e, href as string)}
                   >
                     {label}
                   </a>
@@ -87,16 +102,7 @@ export default function Header() {
         <div className="lg:hidden bg-slate-700 border-t border-slate-600">
           <div className="container mx-auto py-4 px-4">
             <ul className="space-y-4">
-              {[
-                ["/", "Home"],
-                ["/about", "About"],
-                ["/services", "Services", true],
-                ["/blog", "Blog"],
-                ["/appointment", "Appointment"],
-                ["/shop", "Shop"],
-                ["/pages", "Pages"],
-                ["/contact", "Contact"],
-              ].map(([href, label, active]) => (
+              {navLinks.map(([href, label, active]) => (
                 <li key={href as string}>
                   <a
                     href={href as string}
@@ -105,7 +111,7 @@ export default function Header() {
                         ? "text-orange-500 font-medium"
                         : "hover:text-orange-500"
                     }`}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={(e) => handleNavClick(e, href as string)}
                   >
                     {label}
                   </a>

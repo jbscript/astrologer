@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div className="bg-white">
       {/* Main Contact Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50" id="contact">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}

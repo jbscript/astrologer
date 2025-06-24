@@ -113,7 +113,7 @@ const handleWhatsAppClick = (message: string) => {
 
 export default function Services() {
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-white py-16 md:py-24" id="services">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
