@@ -23,12 +23,12 @@ export default function Hero() {
                 Certified Astrologer
               </span>
             </div>
-
+            {/* Dr.h.c Shri. Chithrabhanu K Poduval */}
             {/* Main Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              <span className="text-orange-500">Dr. H.C.</span>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+              <span className="text-orange-500">Dr.h.c</span>
               <br />
-              <span className="text-gray-900">Shri Chittarathana</span>
+              <span className="text-gray-900">Shri. Chithrabhanu</span>
               <br />
               <span className="text-orange-500">K Poduval</span>
             </h1>
@@ -82,7 +82,7 @@ export default function Hero() {
           </div>
 
           {/* Right Content - Mystical Elements */}
-          <div className="relative flex justify-center lg:justify-end">
+          <div className="relative flex justify-center lg:justify-center">
             <div className="relative">
               {/* Main Circle */}
               <div
