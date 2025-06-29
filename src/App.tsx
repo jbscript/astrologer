@@ -1,23 +1,15 @@
-import About from "./components/about";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
-import Header from "./components/header";
-import Hero from "./components/hero";
-// import { ImageCards } from "./components/image-cards";
-import Services from "./components/services";
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./pages/home";
+import PersonalHoroscopeReadingPage from "./pages/services/personal-horoscope-reading";
 
-export default function Page() {
+export default function App() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main className="mx-auto max-w-6xl w-full px-4">
-        <Hero />
-        <About />
-        {/* <ImageCards /> */}
-        <Services />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route
+        path="/personal-horoscope-reading"
+        element={<PersonalHoroscopeReadingPage />}
+      />
+    </Routes>
   );
 }
