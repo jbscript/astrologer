@@ -6,13 +6,12 @@ import {
   CheckCircle,
   Star,
   MessageCircle,
-  ArrowLeft,
   Phone,
   Users,
   Globe,
   Award,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 interface ServiceDetailProps {
   service: {
@@ -39,22 +38,15 @@ const handleWhatsAppClick = (message: string) => {
 
 export default function ServiceDetail({ service }: ServiceDetailProps) {
   const IconComponent = service.icon;
-
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-orange-50 to-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            {/* Back Button */}
-            <Link
-              to="/#services"
-              className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-600 mb-8 transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Back to Services
-            </Link>
-
             <div className="text-center">
               {/* Icon */}
               <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
