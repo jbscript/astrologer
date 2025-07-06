@@ -116,12 +116,12 @@ const services = [
       "Hi Dr. Poduval, I would like to book an online counseling session.",
   },
 ];
-const handleWhatsAppClick = (message: string) => {
-  const phoneNumber = "9526570250"; // Replace with actual WhatsApp number
-  const encodedMessage = encodeURIComponent(message);
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-  window.open(whatsappUrl, "_blank");
-};
+// const handleWhatsAppClick = (message: string) => {
+//   const phoneNumber = "9526570250"; // Replace with actual WhatsApp number
+//   const encodedMessage = encodeURIComponent(message);
+//   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+//   window.open(whatsappUrl, "_blank");
+// };
 
 export default function Services() {
   return (
