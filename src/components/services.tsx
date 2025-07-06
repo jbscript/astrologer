@@ -32,12 +32,14 @@ const services = [
     icon: Home,
     whatsappMessage:
       "Hi Dr. Poduval, I would like to book a Family Horoscope Reading session.",
+    link: "/family-horoscope-reading",
   },
   {
     title: "Group Horoscope Consultation",
     description:
       "Perfect for business partnerships, friend circles, or community groups seeking collective guidance. This session analyzes the compatibility and combined energy of multiple individuals to provide insights for successful collaboration and mutual growth.",
     icon: UsersRound,
+    link: "/group-horoscope-reading",
     whatsappMessage:
       "Hi Dr. Poduval, I would like to book a Group Horoscope Consultation session.",
   },
@@ -46,6 +48,7 @@ const services = [
     description:
       "Experience the sacred ancient practice of Prashna Shastra conducted at the holy Ashamanjaka Temple. This divine consultation method provides precise answers to your specific questions through traditional Vedic techniques blessed by temple deities.",
     icon: Building2,
+    link: "/ashamanjaka-temple-prashna",
     whatsappMessage:
       "Hi Dr. Poduval, I would like to book an Ashamanjaka Temple Prashna session.",
   },
@@ -54,6 +57,7 @@ const services = [
     description:
       "A specialized family-oriented Prashna consultation that addresses family-specific concerns, ancestral influences, and generational blessings. This sacred practice helps resolve family disputes and brings prosperity to the entire lineage.",
     icon: Users,
+    link: "/ashamanjaka-kutumba-prashna",
     whatsappMessage:
       "Hi Dr. Poduval, I would like to book an Ashamanjaka Kutumba Prashna session.",
   },
@@ -62,6 +66,7 @@ const services = [
     description:
       "Discover your ancestral family deity and establish a divine connection that has been guiding your lineage for generations. This spiritual consultation helps you understand your family's divine protector and the proper methods of worship and reverence.",
     icon: Search,
+    link: "/find-your-kuladeivatha",
     whatsappMessage:
       "Hi Dr. Poduval, I would like to find my Kuladeivatha through your guidance.",
   },
@@ -70,6 +75,7 @@ const services = [
     description:
       "Through advanced astrological techniques and intuitive guidance, Dr. Poduval helps locate lost items, missing documents, or valuable possessions. This unique service combines Prashna Shastra with divine intuition to provide direction and hope.",
     icon: Package,
+    link: "/find-back-your-lost-materials-valuables",
     whatsappMessage:
       "Hi Dr. Poduval, I need help finding my lost materials/valuables through astrology.",
   },
@@ -78,6 +84,7 @@ const services = [
     description:
       "Ensure marital harmony and compatibility through comprehensive horoscope matching. This detailed analysis covers Guna Milan, Mangal Dosha, planetary compatibility, and provides guidance for a prosperous and harmonious married life based on Vedic principles.",
     icon: Heart,
+    link: "/find-horoscope-match-for-marriage",
     whatsappMessage:
       "Hi Dr. Poduval, I would like horoscope matching for marriage consultation.",
   },
@@ -86,6 +93,7 @@ const services = [
     description:
       "Participate in powerful Vedic fire rituals designed to remove obstacles, attract prosperity, and invoke divine blessings. These sacred ceremonies are customized based on your specific needs and planetary positions for maximum spiritual benefit.",
     icon: Flame,
+    link: "/perform-unique-homas-homams",
     whatsappMessage:
       "Hi Dr. Poduval, I would like to arrange for unique Homas/Homams ceremony.",
   },
@@ -94,6 +102,7 @@ const services = [
     description:
       "Acquire authentic, personally handwritten Yantras by Dr. Poduval, each crafted with specific mantras and blessed for individual needs. These powerful geometric symbols serve as spiritual tools for meditation, protection, and attracting positive energies.",
     icon: ScrollText,
+    link: "/buy-rare-unique-handwritten-yantras",
     whatsappMessage:
       "Hi Dr. Poduval, I am interested in purchasing rare handwritten Yantras.",
   },
@@ -102,6 +111,7 @@ const services = [
     description:
       "Connect with Dr. Poduval from anywhere in the world through secure online consultations. These virtual sessions provide the same depth of astrological guidance and spiritual counseling as in-person meetings, making wisdom accessible globally.",
     icon: Video,
+    link: "/book-an-online-counseling-session",
     whatsappMessage:
       "Hi Dr. Poduval, I would like to book an online counseling session.",
   },
