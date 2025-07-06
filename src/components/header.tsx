@@ -13,6 +13,7 @@ export default function Header() {
     ["/#services", "Services"],
     ["/#expertise", "Expertise"],
     ["/#contact", "Contact"],
+    ["/works", "Work"],
   ];
 
   const handleNavClick = (
