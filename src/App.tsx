@@ -17,7 +17,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="works" element={<Work />} />
+      <Route path="/works" element={<Work />} />
       <Route
         path="/ashamanjaka-kutumba-prashna"
         element={<AshamanjakaKutumbaReadingPage />}
