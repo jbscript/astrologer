@@ -38,14 +38,23 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-gray-600 mb-4 font-light">
-              Master Astrologer & Spiritual Guide
+              World’s Most Intuitive Astrologer & Spiritual Guide
             </p>
 
             {/* Description */}
             <p className="text-lg text-gray-500 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              With decades of experience in Vedic astrology, palmistry, and
-              spiritual guidance, Dr. Poduval provides authentic insights to
-              help you navigate life's journey with clarity and confidence.
+              With decades of experience in Vedic Astrology, with intuitive
+              capabilities, Shri. Chithrabhanu K Poduval is known globally as a
+              unique astrologer and as Astrologers Astrologer in curing life
+              situation and circumstances. He is carrying incomparable unique
+              achievements to his credit like no one , having worldwide client
+              base, with his predictions, findings and revelations. With the
+              blessings of Lord Ganesha to him devotes and the presiding deity
+              of Payyanur, Sri Subramanya Swami, he is undoubtedly the leading
+              astrologer at Payyanur which is called the world hub of astrology.
+              His revelations for his clients with horoscopes prashna shastra
+              and added unmatched intuitive capabilities is unmatchable for
+              times ahead .
             </p>
 
             {/* Stats */}

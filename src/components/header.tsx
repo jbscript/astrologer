@@ -8,11 +8,11 @@ export default function Header() {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   const navLinks = [
-    ["#home", "Home"],
-    ["#about", "About"],
-    ["#services", "Services"],
-    ["#expertise", "Expertise"],
-    ["#contact", "Contact"],
+    ["/#home", "Home"],
+    ["/#about", "About"],
+    ["/#services", "Services"],
+    ["/#expertise", "Expertise"],
+    ["/#contact", "Contact"],
   ];
 
   const handleNavClick = (
