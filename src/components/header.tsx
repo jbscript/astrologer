@@ -14,7 +14,6 @@ export default function Header() {
     ["/#services", "Services"],
     ["/#expertise", "Expertise"],
     ["/#contact", "Contact"],
-    ["/works", "Work"],
   ];
 
   const handleNavClick = (
@@ -81,8 +80,8 @@ export default function Header() {
             <ul className="flex items-center space-x-8">
               {navLinks.map(([href, label, active]) => (
                 <li key={href as string}>
-                  <Link
-                    to={href as string}
+                  <a
+                    href={href as string}
                     className={`transition-colors ${
                       active
                         ? "text-orange-500 font-medium"
@@ -91,9 +90,14 @@ export default function Header() {
                     onClick={(e) => handleNavClick(e, href as string)}
                   >
                     {label}
-                  </Link>
+                  </a>
                 </li>
               ))}
+              <li>
+                <Link to={"/works"} className={`transition-colors `}>
+                  Works
+                </Link>
+              </li>
             </ul>
           </div>
         </nav>
