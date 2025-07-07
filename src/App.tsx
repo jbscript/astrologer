@@ -11,13 +11,13 @@ import FindHoroscopeMatchForMarriage from "./pages/services/find-horoscope-match
 import FindYourKuladeivatha from "./pages/services/find-your-kuladeivatha";
 import GroupHoroscopeReadingPage from "./pages/services/group-horoscope-reading";
 import PerformUniqueHomasHomams from "./pages/services/perform-unique-homas-homams";
-import { Work } from "./pages/works/page";
+import { Works } from "./pages/works/works";
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/works" element={<Work />} />
+      <Route path="/works" element={<Works />} />
       <Route
         path="/ashamanjaka-kutumba-prashna"
         element={<AshamanjakaKutumbaReadingPage />}

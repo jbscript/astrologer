@@ -120,7 +120,7 @@ const achievements: Achievement[] = [
   },
 ];
 
-export function Work() {
+export function Works() {
   return (
     <div className="max-w-6xl mx-auto p-6 space-y-8">
       {/* Social Media Links */}
