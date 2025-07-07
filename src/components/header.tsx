@@ -1,6 +1,7 @@
 import { Phone, Mail, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -80,8 +81,8 @@ export default function Header() {
             <ul className="flex items-center space-x-8">
               {navLinks.map(([href, label, active]) => (
                 <li key={href as string}>
-                  <a
-                    href={href as string}
+                  <Link
+                    to={href as string}
                     className={`transition-colors ${
                       active
                         ? "text-orange-500 font-medium"
@@ -90,7 +91,7 @@ export default function Header() {
                     onClick={(e) => handleNavClick(e, href as string)}
                   >
                     {label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
