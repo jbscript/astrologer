@@ -1,207 +1,121 @@
-import type React from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import {
-  Github,
-  Linkedin,
-  Twitter,
-  Instagram,
-  Globe,
-  Mail,
-} from "lucide-react";
+export function Work() {
+  const mediaLinks = [
+    {
+      label: "Rahul Gandhi not destined to become PM anytime soon",
+      url: "https://www.theweek.in/news/india/2018/06/19/rahul-gandhi-not-destined-become-pm-anytime-soon-astrologers.html",
+    },
+    {
+      label: "Third term for sure for Modi: Astrologers",
+      url: "https://www.theweek.in/leisure/lifestyle/2024/03/17/third-term-for-sure-for-modi-say-renowned-astrologers.html",
+    },
+    {
+      label: "Coronavirus will see its end soon: Astrologers",
+      url: "https://www.theweek.in/news/india/2020/03/29/coronavirus-will-see-its-end-soon-say-renowned-astrologers.html",
+    },
+    {
+      label: "Will Priyanka Gandhi become PM? What astrologers say",
+      url: "https://www.theweek.in/news/india/2024/11/01/will-priyanka-gandhi-become-india-pm-what-astrologers-say-prime-minister-congress-party.html",
+    },
+    {
+      label: "Modi’s swearing-in: Vegetarian thali and five more years?",
+      url: "https://www.theweek.in/news/india/2024/06/08/modis-swearing-in-its-vegetarian-thali-for-dinner-astrologer-predicts-five-years-for-govt.html",
+    },
+    {
+      label: "No political setback for Modi till 2029: Astrologers",
+      url: "https://www.theweek.in/news/india/modi-will-face-no-political-setback-till-2029-astrologers.html",
+    },
+    {
+      label: "AstroPoduval Tweet",
+      url: "https://x.com/Astropoduval/status/1752984992236593404?t=DIMplMUVE6QYYdACHmLy3Q&s=08",
+    },
+    {
+      label: "Mid-Day Feature",
+      url: "https://www.mid-day.com/brand-media/article/astrology-with-this-man-is-inimitable-and-astronomical-23338581",
+    },
+    {
+      label: "Bharat18 Feature",
+      url: "https://www.bharat18.in/worlds-most-intuitive-astrologer-of-alltime-an-astrologer-with-a-difference/",
+    },
+    {
+      label: "Delhi Updates Feature",
+      url: "https://delhiupdates.in/worlds-most-intuitive-astrologer-of-alltime-an-astrologer-with-a-difference/",
+    },
+  ];
 
-interface SocialLink {
-  name: string;
-  url: string;
-  icon: React.ReactNode;
-  color: string;
-}
+  const chithrabhanuLinks = [
+    {
+      label: "WhatsApp Channel",
+      url: "https://whatsapp.com/channel/0029Va4IQjAHVvTgJTCMFK2j",
+    },
+    {
+      label: "Facebook Group",
+      url: "https://www.facebook.com/share/g/1Cf1iq6SRJ/",
+    },
+    {
+      label: "Facebook Page",
+      url: "https://www.facebook.com/share/1AYDoa81kb/",
+    },
+    {
+      label: "Instagram",
+      url: "https://www.instagram.com/astrologerpoduval?igsh=NnBieG9yM3c1ejM3",
+    },
+    {
+      label: "YouTube Channel",
+      url: "https://youtube.com/@astropoduval?si=w4y-muH-s4K4QFF3",
+    },
+    {
+      label: "JustDial Profile",
+      url: "https://www.justdial.com/Kannur/Astrologer-Drhc-Shri-Chithrabhanu-K-Poduval-Near-Bypass-Payyanur/9999PX497-X497-110805132403-G9J4_BZDET",
+    },
+    { label: "X (Twitter)", url: "https://x.com/astropoduval" },
+    {
+      label: "Facebook Public Profile",
+      url: "https://www.facebook.com/share/16VR5aFwk3/",
+    },
+  ];
 
-interface Achievement {
-  id: number;
-  title: string;
-  description: string;
-  imageUrl: string;
-  date: string;
-  category: string;
-}
-
-const socialLinks: SocialLink[] = [
-  {
-    name: "GitHub",
-    url: "https://github.com",
-    icon: <Github className="w-5 h-5" />,
-    color: "hover:bg-gray-100",
-  },
-  {
-    name: "LinkedIn",
-    url: "https://linkedin.com",
-    icon: <Linkedin className="w-5 h-5" />,
-    color: "hover:bg-blue-50",
-  },
-  {
-    name: "Twitter",
-    url: "https://twitter.com",
-    icon: <Twitter className="w-5 h-5" />,
-    color: "hover:bg-sky-50",
-  },
-  {
-    name: "Instagram",
-    url: "https://instagram.com",
-    icon: <Instagram className="w-5 h-5" />,
-    color: "hover:bg-pink-50",
-  },
-  {
-    name: "Website",
-    url: "https://example.com",
-    icon: <Globe className="w-5 h-5" />,
-    color: "hover:bg-green-50",
-  },
-  {
-    name: "Email",
-    url: "mailto:hello@example.com",
-    icon: <Mail className="w-5 h-5" />,
-    color: "hover:bg-orange-50",
-  },
-];
-
-const achievements: Achievement[] = [
-  {
-    id: 1,
-    title: "Best Developer Award",
-    description:
-      "Recognized for outstanding contribution to open source projects",
-    imageUrl: "/placeholder.svg?height=300&width=400",
-    date: "2024",
-    category: "Professional",
-  },
-  {
-    id: 2,
-    title: "Hackathon Winner",
-    description: "First place in the annual tech innovation hackathon",
-    imageUrl: "/placeholder.svg?height=300&width=400",
-    date: "2023",
-    category: "Competition",
-  },
-  {
-    id: 3,
-    title: "Conference Speaker",
-    description:
-      "Keynote speaker at the International Web Development Conference",
-    imageUrl: "/placeholder.svg?height=300&width=400",
-    date: "2023",
-    category: "Speaking",
-  },
-  {
-    id: 4,
-    title: "Open Source Contributor",
-    description: "Major contributions to popular JavaScript frameworks",
-    imageUrl: "/placeholder.svg?height=300&width=400",
-    date: "2022",
-    category: "Open Source",
-  },
-  {
-    id: 5,
-    title: "Team Leadership",
-    description: "Successfully led a team of 10 developers on a major project",
-    imageUrl: "/placeholder.svg?height=300&width=400",
-    date: "2022",
-    category: "Leadership",
-  },
-  {
-    id: 6,
-    title: "Innovation Award",
-    description:
-      "Awarded for developing an innovative solution that improved efficiency by 40%",
-    imageUrl: "/placeholder.svg?height=300&width=400",
-    date: "2021",
-    category: "Innovation",
-  },
-];
-
-export function Works() {
   return (
-    <div className="max-w-6xl mx-auto p-6 space-y-8">
-      {/* Social Media Links */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Connect With Me
-            </h1>
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="flex flex-wrap justify-center gap-4">
-            {socialLinks.map((social) => (
-              <Button
-                key={social.name}
-                variant="outline"
-                size="lg"
-                className={`flex items-center gap-2 ${social.color} transition-colors`}
-                asChild
+    <div className="max-w-4xl mx-auto p-6 space-y-12">
+      {/* Media Section */}
+      <div className="border rounded-lg p-6 shadow-sm">
+        <h2 className="text-2xl font-bold mb-4 text-center text-gray-900">
+          Media References
+        </h2>
+        <ul className="list-disc pl-6 space-y-2 text-blue-700">
+          {mediaLinks.map((link, index) => (
+            <li key={index}>
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
               >
-                <a
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Visit ${social.name} profile`}
-                >
-                  {social.icon}
-                  <span className="hidden sm:inline">{social.name}</span>
-                </a>
-              </Button>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Achievements Gallery */}
-      <div className="space-y-6">
-        <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight">Achievements</h2>
-          <p className="text-muted-foreground mt-2">
-            A collection of milestones and accomplishments throughout my career
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {achievements.map((achievement) => (
-            <Card
-              key={achievement.id}
-              className="overflow-hidden hover:shadow-lg transition-shadow"
-            >
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <img
-                  src={achievement.imageUrl || "/placeholder.svg"}
-                  alt={achievement.title}
-                  className="object-cover transition-transform hover:scale-105"
-                />
-                <div className="absolute top-4 right-4">
-                  <Badge variant="secondary" className="bg-white/90 text-black">
-                    {achievement.date}
-                  </Badge>
-                </div>
-              </div>
-              <CardContent className="p-6">
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-semibold text-lg leading-tight">
-                      {achievement.title}
-                    </h3>
-                    <Badge variant="outline" className="text-xs">
-                      {achievement.category}
-                    </Badge>
-                  </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {achievement.description}
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+                {link.label}
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
+      </div>
+
+      {/* Social Media Section */}
+      <div className="border rounded-lg p-6 shadow-sm">
+        <h2 className="text-2xl font-bold mb-4 text-center text-gray-900">
+          Social Media – Astrology With Chithrabhanu K Poduval
+        </h2>
+        <ul className="list-disc pl-6 space-y-2 text-blue-700">
+          {chithrabhanuLinks.map((link, index) => (
+            <li key={index}>
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
