@@ -70,13 +70,6 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
                   <Clock className="w-4 h-4 mr-2" />
                   {service.duration}
                 </Badge>
-                <Badge
-                  variant="outline"
-                  className="px-4 py-2 text-sm border-orange-200 text-orange-600"
-                >
-                  <Star className="w-4 h-4 mr-2" />
-                  {service.price}
-                </Badge>
               </div>
 
               {/* CTA Buttons */}
@@ -179,12 +172,7 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
                       <span className="text-gray-600">Duration:</span>
                       <span className="font-medium">{service.duration}</span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-gray-600">Investment:</span>
-                      <span className="font-medium text-orange-500">
-                        {service.price}
-                      </span>
-                    </div>
+
                     <div className="border-t pt-4">
                       <Button
                         className="w-full bg-green-500 hover:bg-green-600 text-white mb-3"
