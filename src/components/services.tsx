@@ -44,22 +44,22 @@ const services = [
       "Hi Dr. Poduval, I would like to book a Group Horoscope Consultation session.",
   },
   {
-    title: "Ashamanjaka Temple Prashna",
+    title: "Ashtamangala Temple Prashna",
     description:
-      "Experience the sacred ancient practice of Prashna Shastra conducted at the holy Ashamanjaka Temple. This divine consultation method provides precise answers to your specific questions through traditional Vedic techniques blessed by temple deities.",
+      "Experience the sacred ancient practice of Prashna Shastra conducted at the holy Ashtamangala Temple. This divine consultation method provides precise answers to your specific questions through traditional Vedic techniques blessed by temple deities.",
     icon: Building2,
     link: "/ashamanjaka-temple-prashna",
     whatsappMessage:
-      "Hi Dr. Poduval, I would like to book an Ashamanjaka Temple Prashna session.",
+      "Hi Dr. Poduval, I would like to book an Ashtamangala Temple Prashna session.",
   },
   {
-    title: "Ashamanjaka Kutumba Prashna",
+    title: "Ashtamangala Kutumba Prashna",
     description:
       "A specialized family-oriented Prashna consultation that addresses family-specific concerns, ancestral influences, and generational blessings. This sacred practice helps resolve family disputes and brings prosperity to the entire lineage.",
     icon: Users,
     link: "/ashamanjaka-kutumba-prashna",
     whatsappMessage:
-      "Hi Dr. Poduval, I would like to book an Ashamanjaka Kutumba Prashna session.",
+      "Hi Dr. Poduval, I would like to book an Ashtamangala Kutumba Prashna session.",
   },
   {
     title: "Find Your Kuladeivatha",

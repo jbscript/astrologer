@@ -88,7 +88,7 @@ export default function Hero() {
                 className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 text-lg"
               >
                 <Calendar className="w-5 h-5 mr-2" />
-                Book Consultation
+                Book a tele consultation
               </Button>
 
               <a href="tel:+919526570250">
@@ -98,7 +98,7 @@ export default function Hero() {
                   className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-3 text-lg cursor-pointer"
                 >
                   <Phone className="w-5 h-5 mr-2" />
-                  Call Now +91-9526570250
+                  In-person consultation
                 </Button>
               </a>
             </div>

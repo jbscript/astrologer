@@ -139,7 +139,7 @@ export default function Footer() {
                   href="/services"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
-                  Ashamanjaka Temple Prashna
+                  Ashtamangala Temple Prashna
                 </a>
               </li>
               <li>
