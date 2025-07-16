@@ -8,6 +8,7 @@ import {
   Twitter,
   Youtube,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -104,38 +105,38 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="/personal-horoscope-reading"
+                <Link
+                  to="/personal-horoscope-reading"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Personal Horoscope Reading
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/ashamanjaka-temple-prashna"
+                <Link
+                  to="/ashamanjaka-temple-prashna"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Ashtamangala Temple Prashna
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/find-your-kuladeivatha"
+                <Link
+                  to="/find-your-kuladeivatha"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Find Your Kuladeivatha
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/buy-rare-unique-handwritten-yantras"
+                <Link
+                  to="/buy-rare-unique-handwritten-yantras"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Handwritten Yantras
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
