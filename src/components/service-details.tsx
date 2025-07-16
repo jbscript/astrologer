@@ -30,7 +30,7 @@ interface ServiceDetailProps {
 }
 
 const handleWhatsAppClick = (message: string) => {
-  const phoneNumber = "+911800326326";
+  const phoneNumber = "9526570250"; // Replace with actual WhatsApp number
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   window.open(whatsappUrl, "_blank");
@@ -82,19 +82,16 @@ export default function ServiceDetail({ service }: ServiceDetailProps) {
                   <MessageCircle className="w-5 h-5 mr-2" />
                   Book via WhatsApp
                 </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-3 bg-transparent"
-                  onClick={() =>
-                    handleWhatsAppClick(
-                      `Hi Dr. Poduval, I would like to call about ${service.title}.`
-                    )
-                  }
-                >
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Now
-                </Button>
+                <a href="tel:+919526570250">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-3 bg-transparent"
+                  >
+                    <Phone className="w-5 h-5 mr-2" />
+                    Call Now
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
