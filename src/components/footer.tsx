@@ -63,7 +63,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#home"
+                  href="/#home"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Home
@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#about"
+                  href="/#about"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   About Dr. Poduval
@@ -79,7 +79,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#services"
+                  href="/#services"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Our Services
@@ -88,7 +88,7 @@ export default function Footer() {
 
               <li>
                 <a
-                  href="#contact"
+                  href="/#contact"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Contact Us
