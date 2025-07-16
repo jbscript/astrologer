@@ -30,9 +30,9 @@ export default function Contact() {
                 </h4>
                 <p className="text-gray-600 text-sm">
                   Payyanur is well-connected by road and rail. The nearest
-                  airport is Mangalore (80km) or Calicut (120km). Local
-                  transportation is readily available from the railway station
-                  and bus stand.
+                  airport is Calicut (57km) or Mangalore (114km) and the nearest
+                  railway station is payyanur (3km). Local transportation is
+                  readily available from the railway station and bus stand.
                 </p>
               </div>
             </div>
