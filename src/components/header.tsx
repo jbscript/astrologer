@@ -123,6 +123,11 @@ export default function Header() {
                   </a>
                 </li>
               ))}
+              <li>
+                <Link to={"/works"} className={`transition-colors `}>
+                  Works
+                </Link>
+              </li>
             </ul>
 
             {/* Contact info */}
