@@ -29,25 +29,25 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/people/Admirer-of-Astrologer-ShriChithrabhanu-K-Poduval/100063854824269"
                 className="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/astrologerpoduval/?igsh=NnBieG9yM3c1ejM3#"
                 className="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://x.com/astropoduval"
                 className="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@astropoduval"
                 className="w-10 h-10 bg-slate-700 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors"
               >
                 <Youtube className="w-5 h-5" />
@@ -63,7 +63,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="/"
+                  href="#home"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Home
@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/about"
+                  href="#about"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   About Dr. Poduval
@@ -79,31 +79,16 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/services"
+                  href="#services"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Our Services
                 </a>
               </li>
+
               <li>
                 <a
-                  href="/blog"
-                  className="text-gray-300 hover:text-orange-500 transition-colors"
-                >
-                  Astrology Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/appointment"
-                  className="text-gray-300 hover:text-orange-500 transition-colors"
-                >
-                  Book Appointment
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/contact"
+                  href="#contact"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Contact Us
@@ -120,23 +105,16 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="/services"
+                  href="/personal-horoscope-reading"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Personal Horoscope Reading
                 </a>
               </li>
+
               <li>
                 <a
-                  href="/services"
-                  className="text-gray-300 hover:text-orange-500 transition-colors"
-                >
-                  Marriage Compatibility
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/services"
+                  href="/ashamanjaka-temple-prashna"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Ashtamangala Temple Prashna
@@ -144,23 +122,16 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/services"
+                  href="/find-your-kuladeivatha"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Find Your Kuladeivatha
                 </a>
               </li>
+
               <li>
                 <a
-                  href="/services"
-                  className="text-gray-300 hover:text-orange-500 transition-colors"
-                >
-                  Online Counseling
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/services"
+                  href="/buy-rare-unique-handwritten-yantras"
                   className="text-gray-300 hover:text-orange-500 transition-colors"
                 >
                   Handwritten Yantras
