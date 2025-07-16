@@ -32,7 +32,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-slate-800 text-white ">
+    <header className="bg-[#fedc32] text-white ">
       {/* Top Contact Bar – hidden on mobile */}
       <div className="bg-slate-900 py-2 px-8 hidden md:block">
         <div className="container mx-auto flex justify-between items-center text-sm">
