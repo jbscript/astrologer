@@ -60,11 +60,11 @@ export default function Hero() {
             {/* Stats */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-8 mb-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500">15+</div>
+                <div className="text-3xl font-bold text-orange-500">18+</div>
                 <div className="text-sm text-gray-500">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500">10K+</div>
+                <div className="text-3xl font-bold text-orange-500">1M</div>
                 <div className="text-sm text-gray-500">Happy Clients</div>
               </div>
               <div className="text-center">
