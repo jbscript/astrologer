@@ -8,6 +8,7 @@ import {
   Heart,
   Sparkles,
 } from "lucide-react";
+import RotatingGanesh from "./rotating-ganesh";
 
 export default function About() {
   return (
@@ -49,10 +50,11 @@ export default function About() {
             {/* Right Visual */}
             <div className="relative">
               <div className="w-full max-w-md mx-auto">
-                <div className="relative bg-gradient-to-br rounded-full p-8 border">
+                <div className="relative bg-gradient-to-br p-8 ">
                   {/* Center Symbol */}
                   <div className="relative z-10 text-center">
-                    <img src="/ganesh.png" alt="Ganesha" />
+                    {/* <img src="/ganesh.png" alt="Ganesha" /> */}
+                    <RotatingGanesh />
                     <p className="text-muted-foreground text-sm ">
                       Lord Ganesha's Grace
                     </p>
