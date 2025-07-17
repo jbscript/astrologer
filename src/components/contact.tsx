@@ -30,7 +30,7 @@ export default function Contact() {
                 </h4>
                 <p className="text-gray-600 text-sm">
                   Payyanur is well-connected by road and rail. The nearest
-                  airport is Calicut (57km) or Mangalore (114km) and the nearest
+                  airport is Kannur (57km) or Mangalore (114km) and the nearest
                   railway station is payyanur (3km). Local transportation is
                   readily available from the railway station and bus stand.
                 </p>
@@ -53,18 +53,16 @@ export default function Contact() {
                         Dr. Poduval's Astrology Center
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
-                        Payyanur, Kannur District
+                        Near Bypass Road Payyanur,
                         <br />
-                        Kerala, India - 670307
+                        Kurnji Road, Surya Junction,
                         <br />
-                        Chithrayogam, Surya Junction,
-                        <br />
-                        Near Bypass
+                        Kannur District Kerala, India - 670307
                       </p>
                     </div>
                   </div>
 
-                  <div className="border-t pt-4">
+                  <div className="border-t pt-4 mb-6">
                     <div className="flex items-center gap-2 mb-2">
                       <Star className="w-4 h-4 text-orange-500" />
                       <span className="text-sm font-medium text-gray-700">
@@ -76,6 +74,28 @@ export default function Contact() {
                       as the world hub of astrology, blessed by the divine
                       presence of Lord Ganesha and ancient temple traditions.
                     </p>
+                  </div>
+                  <div className="border-t pt-4 flex items-start gap-4 mb-6">
+                    <MapPin className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                        Astro Poduval
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        Lajpat Nagar New Delhi
+                      </p>
+                    </div>
+                  </div>
+                  <div className="border-t pt-4 flex items-start gap-4 mb-6">
+                    <MapPin className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                        Astro Poduval
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        Yelahanka New Town, Bengaluru
+                      </p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
