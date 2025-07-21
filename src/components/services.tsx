@@ -46,7 +46,7 @@ const services = [
   {
     title: "Ashtamangala Temple Prashna",
     description:
-      "Experience the sacred ancient practice of Prashna Shastra conducted at the holy Ashtamangala Temple. This divine consultation method provides precise answers to your specific questions through traditional Vedic techniques blessed by temple deities.",
+      "Experiance the sacred ancient practice of Prashna and Ashtamangala prashna to rectify a temple or your place of worship. The divine consultation method provides precise answers to your specific questions through traditional Vedic techniques blessed by temple deities.",
     icon: Building2,
     link: "/ashamanjaka-temple-prashna",
     whatsappMessage:

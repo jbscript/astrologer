@@ -49,8 +49,8 @@ export default function Hero() {
               situation and circumstances. He is carrying incomparable unique
               achievements to his credit like no one , having worldwide client
               base, with his predictions, findings and revelations. With the
-              blessings of Lord Ganesha to him devotes and the presiding deity
-              of Payyanur, Sri Subramanya Swami, he is undoubtedly the leading
+              blessings of Lord Ganesha he devotes and the presiding deity of
+              Payyanur, Sri Subramanya Swami, he is undoubtedly the leading
               astrologer at Payyanur which is called the world hub of astrology.
               His revelations for his clients with horoscopes prashna shastra
               and added unmatched intuitive capabilities is unmatchable for
